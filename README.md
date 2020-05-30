@@ -15,7 +15,7 @@ If you want to contribute to the project, download it and open it from [Visual S
 
 ## Built With
 
-* [Live Charts](https://lvcharts.net/) - The web framework used
+* [Live Charts](https://lvcharts.net/) - Chart library used
 
 ## Authors
 
