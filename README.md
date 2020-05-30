@@ -11,7 +11,7 @@ If you want to contribute to the project, download it and open it from [Visual S
 * [Visual Studio 2019](https://visualstudio.microsoft.com/it/vs/)
 
 ### Preview
-![]()
+![](preview.png)
 
 ## Built With
 
