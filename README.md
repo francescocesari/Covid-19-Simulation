@@ -22,3 +22,5 @@ If you want to contribute to the project, download it and open it from [Visual S
 * **Francesco Cesari**
 
 See also the list of [contributors](https://github.com/francescocesari/Covid-19-Simulation/graphs/contributors) who participated in this project.
+
+![GitHub followers](https://img.shields.io/github/followers/francescocesari?label=Follow%20%40francescocesari&style=social)
