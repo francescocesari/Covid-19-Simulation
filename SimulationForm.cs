@@ -37,8 +37,8 @@ namespace Covid_19
             for (int i = 0; i < People.Length; i++)
             {
                 int diameter = 7;
-                int x = rand.Next(0, SimulationPanel.Width - diameter);
-                int y = rand.Next(0, SimulationPanel.Height - diameter);
+                int x = rand.Next(SimulationPanel.Width - diameter);
+                int y = rand.Next(SimulationPanel.Height - diameter);
                 Point point = new Point(x, y);
                 int speedX;
                 do
@@ -64,6 +64,7 @@ namespace Covid_19
 
         private void SimulationPanel_Paint(object sender, PaintEventArgs e)
         {
+            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             if (People is Person[])
             {
                 foreach (Person person in People)
@@ -73,7 +74,7 @@ namespace Covid_19
             }
         }
 
-        private void SimulationTimer_Tick(object sender, System.EventArgs e)
+        private void SimulationTimer_Tick(object sender, EventArgs e)
         {
             PeopleInteract();
             RefreshLabels();

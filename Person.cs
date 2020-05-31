@@ -44,17 +44,17 @@ namespace Covid_19
         {
             Rectangle rect = new Rectangle(X, Y, Diameter, Diameter);
             SolidBrush solidBrush = new SolidBrush(Color);
-            Pen grayPen = new Pen(Color.Gray);
+            Pen grayPen = new Pen(Color.DimGray);
             g.DrawEllipse(grayPen, rect);
             g.FillEllipse(solidBrush, rect);
             grayPen.Dispose();
             solidBrush.Dispose();
-            if (SpreadRay != 0)
+            if (SpreadRay != 0 && IsAlive)
             {
                 Rectangle spreadRect = new Rectangle(X - SpreadRay / 2, Y - SpreadRay / 2, Diameter + SpreadRay, Diameter + SpreadRay);
-                Pen darkRedPen = new Pen(Color.DarkRed);
-                g.DrawEllipse(darkRedPen, spreadRect);
-                darkRedPen.Dispose();
+                Pen colorPen = new Pen(Color);
+                g.DrawEllipse(colorPen, spreadRect);
+                colorPen.Dispose();
             }
         }
 
@@ -87,8 +87,7 @@ namespace Covid_19
         public void Infect()
         {
             IsInfected = true;
-            Random rand = new Random();
-            if (rand.Next(100) < Settings.SymptomlessProbability)
+            if (Rand.Next(100) < Settings.SymptomlessProbability)
             {
                 IsSymptomless = true;
                 Color = Color.Magenta;
