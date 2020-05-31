@@ -4,7 +4,7 @@ This is a simulation of the "Covid-19" virus behavior. This simulation is for il
 
 ## Getting Started
 
-If you want to contribute to the project, download it and open it from [Visual Studio 2019](https://visualstudio.microsoft.com/it/vs/).
+If you want to contribute to the project, download it and open it in [Visual Studio 2019](https://visualstudio.microsoft.com/it/vs/).
 
 ### Prerequisites
 
